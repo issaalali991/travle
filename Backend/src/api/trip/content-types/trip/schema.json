@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "singularName": "trip",
+    "pluralName": "trips",
+    "displayName": "Trip"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "idTrip": {
+      "unique": true,
+      "type": "integer"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "destination": {
+      "type": "json"
+    },
+    "startLocation": {
+      "type": "string",
+      "required": true
+    },
+    "cityDestination": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string"
+    }
+  }
+}
